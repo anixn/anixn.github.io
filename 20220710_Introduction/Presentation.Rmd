@@ -6,7 +6,7 @@ institute: "Pandit Deendayal Energy University, Gandhinagar"
 date: ".f3[07 July 2022 (updated: `r format(Sys.Date(), '%d %B %Y')`)]"
 output:
   xaringan::moon_reader:
-    css: ["css/xaringan-themer.css", "css/hl.css", "css/tachyons.min.css"]
+    css: ["files/xaringan-themer.css", "files/hl.css", "files/tachyons.min.css"]
     nature:
       highlightStyle: github
       highlightLines: true
