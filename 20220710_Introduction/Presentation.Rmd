@@ -47,7 +47,7 @@ use_progress_bar(color = "#282828",location = "top", height = "0.25em")
 
 ## Bibliography and citation
 
-Use `RefManageR` and `bibtex` package to generate catation with xaringan slide.
+Use `RefManageR` and `bibtex` package to generate citation with xaringan slide.
 
 ```{r, eval=FALSE}
 BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "text", first.inits = FALSE)
