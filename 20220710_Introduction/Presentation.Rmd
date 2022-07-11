@@ -216,6 +216,8 @@ knitr::kable(head(iris))
 Solve this random question :: blab blab its
 
 ```{r, echo=FALSE}
+# install.packages("devtools")
+# devtools::install_github("gadenbuie/countdown")
 countdown::countdown(20, style = "z-index:100")
 ```
 
