@@ -8,9 +8,8 @@ output:
   xaringan::moon_reader:
     css: ["css/xaringan-themer.css", "css/hl.css", "css/tachyons.min.css"]
     nature:
-      highlightStyle: github
+      highlightStyle: solarized-light
       highlightLines: true
-      highlightLanguage: R
       countIncrementalSlides: false
       ratio: 16:9
 ---
@@ -52,26 +51,27 @@ Use `RefManageR` and `bibtex` package to generate catation with xaringan slide.
 
 ```{r, eval=FALSE}
 BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "text", first.inits = FALSE)
-
 bib <- ReadBib("~/adx/Bibliography.bib")
-
-A <- 10 
-B <- "omething" #<<
+A <- 10 #<<
+B <- "Something string" #<<
 C <- TRUE #<<
 
 ```
 
 Use `Cite(bib, "key")` to site an article 
+````{verbatim} 
+1. This is a test `r Citet(bib, "2020AGUFMH184...06K")` after text
+2. This is a test `r Citep(bib, "2020AGUFMH184...06K")` after text
+````
+> This is a test `r Citet(bib, "2020AGUFMH184...06K")` after text<br /> 
+> This is a test `r Citep(bib, "2020AGUFMH184...06K")` after text 
 
-```{text, eval=FALSE}
-1. This is a test `r Citet(bib, "2020AGUFMH184...06K")` after text 
-2. This is a test `r Citep(bib, "2020AGUFMH184...06K")` after text 
+----
+Use footnote with `.footnote[footnote text]`
 
-```
+e.g.: Some text<sup>1</sup>
 
-1. This is a test `r Citet(bib, "2020AGUFMH184...06K")` after text 
-2. This is a test `r Citep(bib, "2020AGUFMH184...06K")` after text 
-
+.footnote[1: This is a footnote]
 ---
 
 ## Add table with `kable`
