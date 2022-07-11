@@ -1,0 +1,20 @@
+---
+title: "Using slides in my Github pages"
+author: "Dr. Ankit Deshmukh"
+date: 2022-07-04T20:32:05Z
+categories: ["R"]
+tags: ["Setup", "plot"]
+cover:
+    image: "Cover.png"
+    alt: "Image contains R, Python, and DB logo"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, collapse = TRUE)
+```
+# This is my heading 
+some random styles 
+
+```{r, out.width=600}
+knitr::include_url("https://anixn.github.io/20220710_Introduction/Presentation.html#1", height = "600px")
+```
