@@ -119,10 +119,12 @@ Use `class:` just after `---`
 .left[This text is on left]
 .right[This text in on right]
 
+[Ankit Deshmukh](www.ankitdeshmukh.com)
+
 ---
 
 # Mermaid plot for graphs in R markdown 
-This is my diagram with mermaid plot
+This is my diagram with mermaid plot [Ankit Deshmukh](www.ankitdeshmukh.com)
 
 .pull_left[
 ```{r, eval=FALSE}
